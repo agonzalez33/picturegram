@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PIctureGram</title>
+	<style type="text/css">
+
+	body { background: url(https://us.123rf.com/450wm/rangizzz/rangizzz1411/rangizzz141100006/33456095-smoke-isolated-on-black-background.jpg?ver=6); }
+		h1{
+			text-align: center;
+			color: white
+		}
+		#alyssa{
+			width: calc(100% - 10px);
+			height: auto;
+			display: block;
+			margin: 5px;
+		}
+		.Justin{
+			width: calc(33.33333% - 13px);
+			height: auto;
+			margin: 5px;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<H1>PICTUREGRAM</H1> 
+	<img src="image_123986672 (3).JPG" id="alyssa">
+	<img src="image_123986672 (2).JPG" class="Justin">
+<img src="image_123986672 (1).JPG" class= "Justin">
+<img src="image_123986672 (6).JPG" class="Justin">
+<img src="image_123986672 (8).JPG" class="Justin">
+<img src="image_123986672 (7).JPG" class="Justin">
+<img src="image_123986672 (4).JPG" class="Justin">
+<img src="image_123986672 (5).JPG" class="Justin">
+<img src="Screen Shot 2018-10-02 at 1.47.08 PM" class="Justin">
+<img src="unnamed.jpg" class="Justin">
+
+<script type="text/javascript">
+		const bigImage = document.querySelector("#alyssa");
+		const images = document.querySelectorAll(".Justin");
+
+		images.forEach(image => image.addEventListener("click", 
+			function(e) {
+				let clickedImage = e.target.src;
+				let swapImage = bigImage.src;
+				bigImage.src = clickedImage;
+				e.target.src = swapImage;
+			}
+			));
+	</script>
+
+
+</body> 
+
+
+</html>
